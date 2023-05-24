@@ -1,4 +1,4 @@
-package boardProject.board2.dto;
+package boardProject.board2.dto.blog;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

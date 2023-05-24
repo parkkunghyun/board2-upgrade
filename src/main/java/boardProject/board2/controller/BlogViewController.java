@@ -1,7 +1,7 @@
 package boardProject.board2.controller;
 
-import boardProject.board2.dto.ArticleListViewResponse;
-import boardProject.board2.dto.ArticleViewResponse;
+import boardProject.board2.dto.blog.ArticleListViewResponse;
+import boardProject.board2.dto.blog.ArticleViewResponse;
 import boardProject.board2.entity.Article;
 import boardProject.board2.service.BlogService;
 import lombok.RequiredArgsConstructor;

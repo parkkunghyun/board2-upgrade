@@ -1,8 +1,8 @@
 package boardProject.board2.controller;
 
-import boardProject.board2.dto.AddArticleRequest;
-import boardProject.board2.dto.ArticleResponse;
-import boardProject.board2.dto.UpdateArticleRequest;
+import boardProject.board2.dto.blog.AddArticleRequest;
+import boardProject.board2.dto.blog.ArticleResponse;
+import boardProject.board2.dto.blog.UpdateArticleRequest;
 import boardProject.board2.entity.Article;
 import boardProject.board2.service.BlogService;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +21,7 @@ public class BlogApiController {
 
     @PostMapping("/api/articles")
     public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request) {
-        Article savedArticle = blogService.addArticle(request);
+         Article savedArticle = blogService.addArticle(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedArticle);
     }
 
@@ -31,7 +31,6 @@ public class BlogApiController {
                 .stream().map(ArticleResponse::new).toList();
 
         return ResponseEntity.ok().body(responses);
-
     }
 
     @GetMapping("/api/articles/{id}")

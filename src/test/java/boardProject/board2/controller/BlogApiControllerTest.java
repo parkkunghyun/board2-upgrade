@@ -1,6 +1,6 @@
 package boardProject.board2.controller;
 
-import boardProject.board2.dto.AddArticleRequest;
+import boardProject.board2.dto.blog.AddArticleRequest;
 import boardProject.board2.entity.Article;
 import boardProject.board2.repository.BlogRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -13,14 +13,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MockMvcBuilder;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

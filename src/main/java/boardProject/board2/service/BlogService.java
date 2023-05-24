@@ -1,7 +1,7 @@
 package boardProject.board2.service;
 
-import boardProject.board2.dto.AddArticleRequest;
-import boardProject.board2.dto.UpdateArticleRequest;
+import boardProject.board2.dto.blog.AddArticleRequest;
+import boardProject.board2.dto.blog.UpdateArticleRequest;
 import boardProject.board2.entity.Article;
 import boardProject.board2.repository.BlogRepository;
 import lombok.RequiredArgsConstructor;
@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
