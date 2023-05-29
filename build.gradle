@@ -36,6 +36,9 @@ dependencies {
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 	// 테스트를 위한 용도
 	testImplementation 'org.springframework.security:spring-security-test'
+
+	implementation 'io.jsonwebtoken:jjwt:0.9.1' // 자바 jwt 라이브러리
+	implementation 'javax.xml.bind:jaxb-api:2.3.1'  // xml문서와 java객체간 매핑을 자동화!
 }
 
 tasks.named('test') {

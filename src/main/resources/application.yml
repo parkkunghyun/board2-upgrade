@@ -12,3 +12,7 @@ spring:
   h2:
     console:
       enabled: true
+
+jwt:
+  issuer: ajufresh@gmail.com # \uC774\uC288\uBC1C\uAE09\uC790
+  secret_key : study-springboot # \uBE44\uBC00\uD0A4
